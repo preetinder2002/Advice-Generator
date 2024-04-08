@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+
+*,
+*::after,
+*::before{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{background-color: hsl(217, 19%, 24%); color: hsl(193, 38%, 86%);}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+button{font-size: 3rem;}
+img{max-width: 100%;}
+
+.card{
+  max-width: 34rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(217, 19%, 38%);
+  border-radius: 0.5rem;
+   padding: 2.8rem;
+   text-align: center;
+   position: relative;
+
+
+
+
+}
+
+.btn{
+  border: none;
+  outline: none;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgba(144, 245, 158, 0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -2rem;
+  transition: 0.3s linear;
+}
+
+
+.img-mobile{margin: 2rem 0;}
+.img-desktop{display: none; margin: 2rem 0;}
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media(min-width: 500px){
+
+.img-mobile{display: none;}
+.img-desktop{display: block}
+.btn:hover{
+  cursor: pointer;
+  transition: scale(1.03);
+  box-shadow: rgba(29, 232, 57, 0.8);
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+<main>
+  
+
+    <div class="card" id="card">
+
+       <div class="advice-slip">
+         
+
+       </div>
+      
+       <div>
+         <img src="images/pattern-divider-mobile.svg" class="img-mobile">
+         <img src="images/pattern-divider-desktop.svg" class="img-desktop">
+       </div>
+
+        <div>
+          <button class="btn" id="btn">
+            <img src="images/icon-dice.svg">
+            
+          </button>
+        </div>
+
+    </div>
+
+</main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+
+<script src="app.js">
+  
+
+
+</script>
+
+
+
+</body>
+</html>
